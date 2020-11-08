@@ -1,0 +1,57 @@
+<div class="window" cdkDrag cdkDragBoundary=".drag-area">
+
+  <div class="tab-window tab-totem">
+    <span class="tab-title">Totem</span>
+    <div class="tab-body">
+      <mat-grid-list cols="1" rowHeight="40px" gutterSize="3px">
+        <mat-grid-tile *ngFor="let tile of tilesTotems"
+                       [colspan]="tile.cols"
+                       [rowspan]="tile.rows"
+                       [style.background-color]="'#a59990'"
+                       [style.border]="tile.border"
+                       [style.border-radius]="'4px'">
+          <div class="tile-header">
+            {{tile.text}}
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </div>
+
+  <div class="tab-window tab-equipment">
+    <span class="tab-title">Equipment Inventory</span>
+    <div class="tab-body">
+      <mat-grid-list cols="5" rowHeight="40px" gutterSize="3px">
+        <mat-grid-tile *ngFor="let tile of tilesEquipment"
+                       [colspan]="tile.cols"
+                       [rowspan]="tile.rows"
+                       [style.background-color]="'#a59990'"
+                       [style.border]="tile.border"
+                       [style.opacity]="hideEquipmentTile(tile)"
+                       [style.border-radius]="'4px'">
+          <div class="tile-header">
+            {{tile.text}}
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </div>
+
+  <div class="tab-window tab-arcane">
+    <span class="tab-title">Arcane Equipment</span>
+    <div class="tab-body">
+      <mat-grid-list cols="3" rowHeight="40px" gutterSize="3px">
+        <mat-grid-tile *ngFor="let tile of tilesArcane"
+                       [colspan]="tile.cols"
+                       [rowspan]="tile.rows"
+                       [style.background-color]="'#a59990'"
+                       [style.border]="tile.border"
+                       [style.border-radius]="'4px'">
+          <div class="tile-header">
+            {{tile.text}}
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </div>
+</div>

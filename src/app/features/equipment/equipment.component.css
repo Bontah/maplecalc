@@ -1,0 +1,20 @@
+.tab-totem {
+  width: 50px;
+}
+
+.tab-equipment {
+  width: 224px;
+}
+
+.tab-arcane {
+  width: 136px;
+}
+
+.tile-header {
+  position: absolute;
+  top: 2px;
+  font-size: 8px;
+  line-height: 12px;
+  color: #b8b1a8;
+  left: 2px;
+}
