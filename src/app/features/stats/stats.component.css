@@ -1,0 +1,54 @@
+.tab-body ul {
+  margin: 0;
+  padding: 0;
+}
+
+.tab-body li {
+  list-style: none;
+}
+
+.tab-hyperStats .tab-body {
+  width: 150px;
+}
+
+.tab-characterStats .tab-body {
+  width: 250px;
+}
+
+.tab-detailedStats .tab-body {
+  width: 150px;
+}
+
+.statname {
+  width: 90px;
+  display: inline-table;
+  color: white;
+  border-radius: 5px 0 0 5px;
+  margin: 1px 0 1px 0;
+  padding-left: 2px;
+  font-size: 10px;
+}
+
+.statvalue {
+  width: 50px;
+  display: inline-table;
+  border-radius: 0 5px 5px 0;
+  margin: 1px 0 1px 0;
+  padding-left: 2px;
+  font-size: 10px;
+}
+
+.tab-hyperStats .statname {
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(77,77,172,1) 0%, rgba(1,175,210,1) 100%);
+}
+
+.tab-characterStats .statname {
+  background: rgb(34,73,24);
+  background: linear-gradient(0deg, rgba(34,73,24,1) 0%, rgba(18,210,1,1) 100%);
+}
+
+.tab-detailedStats .statname {
+  background: rgb(34,73,24);
+  background: linear-gradient(0deg, rgba(34,73,24,1) 0%, rgba(18,210,1,1) 100%);
+}

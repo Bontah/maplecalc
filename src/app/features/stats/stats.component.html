@@ -1,0 +1,38 @@
+<div class="window" cdkDrag cdkDragBoundary=".drag-area">
+
+  <div class="tab-window tab-hyperStats">
+    <span class="tab-title">Hyper Stats</span>
+    <div class="tab-body">
+      <ul>
+        <li *ngFor="let stat of hyperStats">
+          <span class="statname">{{stat.name}}</span>
+          <span class="statvalue">{{stat.value}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tab-window tab-characterStats">
+    <span class="tab-title">Character Stats</span>
+    <div class="tab-body">
+      <ul>
+        <li *ngFor="let stat of characterStats">
+          <span class="statname">{{stat.name}}</span>
+          <span class="statvalue">{{stat.value}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tab-window tab-detailedStats">
+    <span class="tab-title">Detailes Stats</span>
+    <div class="tab-body">
+      <ul>
+        <li *ngFor="let stat of detailedStats">
+          <span class="statname">{{stat.name}}</span>
+          <span class="statvalue">{{stat.value}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
